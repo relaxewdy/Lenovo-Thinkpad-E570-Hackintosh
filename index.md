@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+<!-- omit in toc -->
+#  macOS on Lenovo E570
 
-You can use the [editor on GitHub](https://github.com/relaxewdy/Lenovo-Thinkpad-E570-Hackintosh/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<h3> 
+    English |
+    <a href="https://github.com/relaxewdy/Thinkpad-E570-Hackintosh-OpenCore/blob/main/README-tr.md">Türkçe</a>
+</h3>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<img align="right" src="https://i.loli.net/2021/02/17/NSFk9yputKJ87jd.png" width="200px" alt="preview">
 
-### Markdown
+OpenCore config for Hackintosh OpenCore Lenovo E570.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[![macOS](https://img.shields.io/badge/macOS-11.2.3-orange)](https://www.apple.com/tr/macos/big-sur/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![release](https://img.shields.io/badge/download-lastest%20version-blue.svg)](https://github.com/relaxewdy/Thinkpad-E570-Hackintosh-OpenCore/releases/tag/relaxewdy)
 
-```markdown
-Syntax highlighted code block
+## Screenshot
+<details>
+<summary>Big Sur</summary>
 
-# Header 1
-## Header 2
-### Header 3
+![](https://i.loli.net/2021/02/17/svA1zWm6CrGBDu3.png)
 
-- Bulleted
-- List
+</details>
 
-1. Numbered
-2. List
+<!-- omit in toc -->
+## Hardware
 
-**Bold** and _Italic_ and `Code` text
+| **LENOVO** | Detail                                                  |
+| ------------------- | ------------------------------------------- |
+| Model Name      | Lenovo E570      |
+| CPU              | Intel(R) Core(TM) i5-7200U CPU @ 2.40GHz Kaby Lake             |
+| RAM           | 8 GB 2400 MHz DDR4    |
+| Graphic Card | Intel(R) HD Graphics 620 (1 GB)                     |
+| Wi-Fi             | DW1820A 802.11ac |
+| Audio       | Conexant CX20753/4                       |
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## What are working (Everything)
 
-### Jekyll Themes
+| **Details**                                |                                    |
+| -----------------------------------  | -------- |
+|  Turbo boost and CPU frequency stage |  ✅  |
+|  Intel UHD Graphics 620              |  ✅  |
+|  Brightness control                  |  ✅  |
+|  HDMI                                |  ✅  |
+|  Audio Conexant CX20753/4 layout-id: `15` |  ✅  |
+|  Realtek Ethernet RTL8111            |  ✅  | 
+|  DW1820A Wi-Fi and Bluetooth, Airdrop, Handoff, SideCar, iMessage...         |  ✅  |
+|  USB 3.0 and Type-C (with Port Map        |  ✅  |
+|  Touchpad (14 gestures are working)   |  ✅  |
+|  Battery status   |  ✅  |
+|  S3 Sleep / Wake   |  ✅  |
+|  S4 Hibernation / Wake   |  ✅  |
+|  Camera   |  ✅  |
+|  Fn shortcut keys   |  ✅  |
+ 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/relaxewdy/Lenovo-Thinkpad-E570-Hackintosh/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## What You Have to Do
 
-### Support or Contact
+- SMBIOS Settings
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Add Device Properties Network Controller(WiFi) because i removed
+
+ 
+With OpenCore Configrator you should definitely set your SMBIOS settings because the config does not contain SMBIOS information MacBook Pro 14.1
